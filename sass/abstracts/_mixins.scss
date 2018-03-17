@@ -1,0 +1,15 @@
+// MIXINS insert @incluse and then mixin var name in a declaration
+@mixin clearfix {
+  &::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+@mixin style-link-text($col) {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $col; // passing the variable from the css declaration
+}
+

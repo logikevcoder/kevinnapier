@@ -1,3 +1,67 @@
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -ms-transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
 *,
 *::after,
 *::before {
@@ -9,16 +73,13 @@ html {
   font-size: 62.5%; }
 
 body {
+  box-sizing: border-box; }
+
+body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
   line-height: 1.7;
-  padding: 3rem;
-  box-sizing: border-box; }
-
-a:link {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #e88c30; }
+  padding: 3rem; }
 
 /* ==========================================================================
 Navigation
@@ -164,70 +225,6 @@ Grid
 /* ==========================================================================
 keyframes
 ========================================================================== */
-@-webkit-keyframes rotateWord {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px); }
-  5% {
-    opacity: 1;
-    -webkit-transform: translateY(0px); }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px); }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px); }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@-ms-keyframes rotateWord {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0;
-    -ms-transform: translateY(-30px); }
-  5% {
-    opacity: 1;
-    -ms-transform: translateY(0px); }
-  17% {
-    opacity: 1;
-    -ms-transform: translateY(0px); }
-  20% {
-    opacity: 0;
-    -ms-transform: translateY(30px); }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
-@keyframes rotateWord {
-  0% {
-    opacity: 0; }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px); }
-  5% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px); }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px); }
-  80% {
-    opacity: 0; }
-  100% {
-    opacity: 0; } }
-
 /* ==========================================================================
 Media Queries
 ========================================================================== */

@@ -1,129 +1,24 @@
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
 @import "base/base";
+@import "base/typography";
+@import "base/utilities";
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
+@import "layout/header";
 
-html {
-  // Set the default font-size to rems, 10px = 1rem
-  font-size: 62.5%; // Which = 10px / 16px 
-  // This also allows the user to zoom in on the page. It enhances the size of everything. 
-}
+@import "pages/home";
 
-body {
-  background-color:#fff;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.7;
-  padding: 3rem;
-  box-sizing: border-box;
-}
 
-$main-orange: #e88c30;
-$mid-black: #545454;
 
-// MIXINS insert @incluse and then mixin var name in a declaration
-@mixin clearfix {
-  &::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-}
 
-@mixin style-link-text($col) {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: $col; // passing the variable from the css declaration
-}
 
-a:link {
-  @include style-link-text($main-orange);
-}
-/* ==========================================================================
-Navigation
-========================================================================== */
 
-.nav-toggle {
-  position: absolute;
-  top: 0;
-  right: 15px;
-  z-index: 999999;
-  padding: 10px 35px 16px 0px;
-  cursor: pointer;
-}
 
-.nav-toggle:focus {
-  outline: none;
-}
 
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 35px;
-  height: 5px;
-  border-radius: 1px;
-  background: #000;
-  cursor: pointer;
-}
 
-.nav-toggle span:before {
-  top: -10px
-}
-
-.nav-toggle span:after {
-  bottom: -10px
-}
-
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out;
-}
-
-.nav-toggle.active span {
-  background-color: transparent
-}
-
-.nav-toggle.active span:before,
-.nav-toggle.active span:after {
-  top: 0
-}
-
-.nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-}
-
-.nav-toggle.active span:after {
-  top: 10px;
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  -ms-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg);
-}
-
-.navicon {
-  position: relative;
-  height: 26px;
-}
-
-.navicon p {
-  margin: 1px 50px 0 0
-}
-
-.navicon-fixed {
-  position: fixed;
-  top: 59px;
-  right: 143px;
-}
 
 
 /* ==========================================================================
@@ -239,93 +134,7 @@ Grid
 /* ==========================================================================
 keyframes
 ========================================================================== */
-@-webkit-keyframes rotateWord {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
-@-ms-keyframes rotateWord {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -ms-transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -ms-transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes rotateWord {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-    transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-    transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-    transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
 
 /* ==========================================================================
 Media Queries
