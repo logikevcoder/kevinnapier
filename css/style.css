@@ -1,0 +1,240 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  background-color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.7;
+  padding: 3rem;
+  box-sizing: border-box; }
+
+a:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #e88c30; }
+
+/* ==========================================================================
+Navigation
+========================================================================== */
+.nav-toggle {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: 999999;
+  padding: 10px 35px 16px 0px;
+  cursor: pointer; }
+
+.nav-toggle:focus {
+  outline: none; }
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 5px;
+  border-radius: 1px;
+  background: #000;
+  cursor: pointer; }
+
+.nav-toggle span:before {
+  top: -10px; }
+
+.nav-toggle span:after {
+  bottom: -10px; }
+
+.nav-toggle span,
+.nav-toggle span:before,
+.nav-toggle span:after {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
+.nav-toggle.active span {
+  background-color: transparent; }
+
+.nav-toggle.active span:before,
+.nav-toggle.active span:after {
+  top: 0; }
+
+.nav-toggle.active span:before {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.nav-toggle.active span:after {
+  top: 10px;
+  -webkit-transform: translateY(-10px) rotate(-45deg);
+  -ms-transform: translateY(-10px) rotate(-45deg);
+  transform: translateY(-10px) rotate(-45deg); }
+
+.navicon {
+  position: relative;
+  height: 26px; }
+
+.navicon p {
+  margin: 1px 50px 0 0; }
+
+.navicon-fixed {
+  position: fixed;
+  top: 59px;
+  right: 143px; }
+
+/* ==========================================================================
+Hero
+========================================================================== */
+.hero__left-col {
+  background-color: #e88c30; }
+
+.hero__right-col {
+  background-color: #545454; }
+  .hero__right-col .rw-wrapper {
+    position: relative;
+    font-family: 'Open Sans';
+    padding: 10px;
+    text-align: center; }
+    .hero__right-col .rw-wrapper__sentence {
+      margin: 0;
+      text-align: left; }
+      .hero__right-col .rw-wrapper__sentence span {
+        color: #fff;
+        font-size: 200%;
+        font-weight: normal; }
+      .hero__right-col .rw-wrapper__sentence--words {
+        display: inline;
+        text-indent: 10px;
+        dsplay: none; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span {
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        color: #fff;
+        -webkit-animation: rotateWord 18s linear infinite 0s;
+        -ms-animation: rotateWord 18s linear infinite 0s;
+        animation: rotateWord 18s linear infinite 0s; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(2) {
+        -webkit-animation-delay: 3s;
+        -ms-animation-delay: 3s;
+        animation-delay: 3s;
+        color: #fff; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(3) {
+        -webkit-animation-delay: 6s;
+        -ms-animation-delay: 6s;
+        animation-delay: 6s;
+        color: #fff; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(4) {
+        -webkit-animation-delay: 9s;
+        -ms-animation-delay: 9s;
+        animation-delay: 9s;
+        color: #fff; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(5) {
+        -webkit-animation-delay: 12s;
+        -ms-animation-delay: 12s;
+        animation-delay: 12s;
+        color: #fff; }
+      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(6) {
+        -webkit-animation-delay: 15s;
+        -ms-animation-delay: 15s;
+        animation-delay: 15s;
+        color: #fff; }
+
+/* ==========================================================================
+About
+========================================================================== */
+/* ==========================================================================
+Projects
+========================================================================== */
+/* ==========================================================================
+Blog
+========================================================================== */
+/* ==========================================================================
+Footer / Contact me
+========================================================================== */
+/* ==========================================================================
+Grid
+========================================================================== */
+/* ==========================================================================
+keyframes
+========================================================================== */
+@-webkit-keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@-ms-keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -ms-transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -ms-transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -ms-transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+@keyframes rotateWord {
+  0% {
+    opacity: 0; }
+  2% {
+    opacity: 0;
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px); }
+  5% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  17% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px); }
+  20% {
+    opacity: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px); }
+  80% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+@media screen and (max-width: 768px) {
+  .rw-sentence {
+    font-size: 18px; } }
+
+@media screen and (max-width: 320px) {
+  .rw-sentence {
+    font-size: 9px; } }
