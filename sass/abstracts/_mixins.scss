@@ -13,3 +13,8 @@
   color: $col; // passing the variable from the css declaration
 }
 
+@mixin centerContent {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

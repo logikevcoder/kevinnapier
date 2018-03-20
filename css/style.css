@@ -1,4 +1,15 @@
 /* ==========================================================================
+Waypoints
+========================================================================== */
+.delay-05s {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s; }
+
+.delay-1s {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s; }
+
+/* ==========================================================================
 keyframes
 ========================================================================== */
 @-webkit-keyframes rotateWord {
@@ -76,7 +87,10 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: auto; }
 
 /* ==========================================================================
 Grid
@@ -84,8 +98,20 @@ Grid
 body {
   background-color: #fff;
   font-family: "Open Sans", sans-serif;
-  line-height: 1.7;
-  padding: 3rem; }
+  line-height: 1.7; }
+
+h1 {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  line-height: 7.5rem;
+  font-size: 9rem;
+  font-weight: 800; }
+
+header {
+  grid-column: 1 / 1;
+  grid-row: 1 / -1;
+  background-color: #000;
+  height: 100%; }
 
 /* ==========================================================================
 Navigation
@@ -110,7 +136,7 @@ Navigation
   width: 35px;
   height: 5px;
   border-radius: 1px;
-  background: #000;
+  background: #fff;
   cursor: pointer; }
 
 .nav-toggle span:before {
@@ -155,73 +181,147 @@ Navigation
   top: 59px;
   right: 143px; }
 
+footer {
+  grid-row: 6 / 7;
+  grid-column: 2 / 10; }
+
 /* ==========================================================================
 Hero
 ========================================================================== */
-.hero__left-col {
-  background-color: #e88c30; }
-
-.hero__right-col {
-  background-color: #545454; }
-  .hero__right-col .rw-wrapper {
+.hero {
+  height: 60rem;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column: 1 / 11;
+  grid-row: 2 / 3; }
+  .hero__left-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    font-family: 'Open Sans';
-    padding: 10px;
-    text-align: center; }
-    .hero__right-col .rw-wrapper__sentence {
-      margin: 0;
-      text-align: left; }
-      .hero__right-col .rw-wrapper__sentence span {
-        color: #fff;
-        font-size: 200%;
-        font-weight: normal; }
-      .hero__right-col .rw-wrapper__sentence--words {
-        display: inline;
-        text-indent: 10px;
-        dsplay: none; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span {
-        position: absolute;
-        opacity: 0;
-        overflow: hidden;
-        color: #fff;
-        -webkit-animation: rotateWord 18s linear infinite 0s;
-        -ms-animation: rotateWord 18s linear infinite 0s;
-        animation: rotateWord 18s linear infinite 0s; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(2) {
-        -webkit-animation-delay: 3s;
-        -ms-animation-delay: 3s;
-        animation-delay: 3s;
-        color: #fff; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(3) {
-        -webkit-animation-delay: 6s;
-        -ms-animation-delay: 6s;
-        animation-delay: 6s;
-        color: #fff; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(4) {
-        -webkit-animation-delay: 9s;
-        -ms-animation-delay: 9s;
-        animation-delay: 9s;
-        color: #fff; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(5) {
-        -webkit-animation-delay: 12s;
-        -ms-animation-delay: 12s;
-        animation-delay: 12s;
-        color: #fff; }
-      .hero__right-col .rw-wrapper__sentence--words-1 span:nth-child(6) {
-        -webkit-animation-delay: 15s;
-        -ms-animation-delay: 15s;
-        animation-delay: 15s;
-        color: #fff; }
+    background-color: #FF4849;
+    grid-column: 2 / 6;
+    grid-row: 1 / 3; }
+    .hero__left-col .rw-wrapper {
+      position: absolute;
+      top: 0%;
+      left: 116%;
+      width: 100%;
+      font-family: 'Open Sans';
+      padding-top: 5rem;
+      text-align: center; }
+      .hero__left-col .rw-wrapper__sentence {
+        margin: 0;
+        text-align: left; }
+        .hero__left-col .rw-wrapper__sentence span {
+          color: #fff;
+          font-size: 3rem;
+          font-weight: normal; }
+        .hero__left-col .rw-wrapper__sentence--words {
+          display: inline;
+          text-indent: 1rem;
+          dsplay: none; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span {
+          position: absolute;
+          opacity: 0;
+          overflow: hidden;
+          color: #fff;
+          -webkit-animation: rotateWord 18s linear infinite 0s;
+          -ms-animation: rotateWord 18s linear infinite 0s;
+          animation: rotateWord 18s linear infinite 0s; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span:nth-child(2) {
+          -webkit-animation-delay: 3s;
+          -ms-animation-delay: 3s;
+          animation-delay: 3s;
+          color: #fff; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span:nth-child(3) {
+          -webkit-animation-delay: 6s;
+          -ms-animation-delay: 6s;
+          animation-delay: 6s;
+          color: #fff; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span:nth-child(4) {
+          -webkit-animation-delay: 9s;
+          -ms-animation-delay: 9s;
+          animation-delay: 9s;
+          color: #fff; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span:nth-child(5) {
+          -webkit-animation-delay: 12s;
+          -ms-animation-delay: 12s;
+          animation-delay: 12s;
+          color: #fff; }
+        .hero__left-col .rw-wrapper__sentence--words-1 span:nth-child(6) {
+          -webkit-animation-delay: 15s;
+          -ms-animation-delay: 15s;
+          animation-delay: 15s;
+          color: #fff; }
+  .hero__right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 6 / 10;
+    grid-row: 1 / 3;
+    background-color: #545454; }
 
 /* ==========================================================================
-About
+skills
 ========================================================================== */
+.skills {
+  background: white;
+  background: -moz-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, white), color-stop(21%, whitesmoke), color-stop(55%, #ededed), color-stop(100%, #ededed));
+  background: -webkit-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
+  background: -o-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
+  background: -ms-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
+  background: linear-gradient(135deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
+  min-height: 40rem;
+  grid-row: 3 / 4;
+  grid-column: 2 / 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center; }
+  .skills__block {
+    text-align: center;
+    justify-content: center;
+    padding: 5rem 0;
+    background-color: #f6f7f9;
+    width: 33.333%; }
+    .skills__block__icon {
+      vertical-align: top;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1rem;
+      color: #778899;
+      font-family: FontAwesome; }
+    .skills__block__body {
+      display: inline-block;
+      margin-left: 0;
+      width: 50%; }
+    .skills__block__header {
+      margin: 1.5rem 0;
+      padding: 0;
+      color: #24374b;
+      font-size: 1.5rem; }
+    .skills__block__p {
+      width: 100%;
+      font-size: 1rem;
+      color: #778899; }
+
 /* ==========================================================================
 Projects
 ========================================================================== */
+.projects {
+  grid-row: 4 / 5;
+  grid-column: 2 / 10; }
+
 /* ==========================================================================
 Blog
 ========================================================================== */
+.blog {
+  grid-row: 5 / 6;
+  grid-column: 2 / 10; }
+
 /* ==========================================================================
 Media Queries
 ========================================================================== */

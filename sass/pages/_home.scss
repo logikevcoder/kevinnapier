@@ -3,27 +3,39 @@ Hero
 ========================================================================== */
 
 .hero {
+  height:60rem;
+ 
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-column: 1 / 11;
+  grid-row: 2 / 3;
+
   &__left-col {
-    background-color: $main-orange;
-  }
-  &__right-col {
-    background-color: $mid-black;
+    @include centerContent;
+    position: relative;
+    background-color: $main-red;
+    grid-column: 2 / 6;
+    grid-row: 1 / 3;
+
     .rw-wrapper {
-      position: relative;
+      position: absolute;
+      top:0%;
+      left: 116%;
+      width: 100%;
       font-family: 'Open Sans';
-      padding: 10px;
+      padding-top: 5rem;
       text-align: center;
       &__sentence {
         margin: 0;
         text-align: left;
         span {
           color: #fff;
-          font-size: 200%;
+          font-size: 3rem;
           font-weight: normal;
         }
         &--words {
           display: inline;
-          text-indent: 10px;
+          text-indent: 1rem;
           dsplay: none;
         }
         &--words-1 span {
@@ -68,17 +80,93 @@ Hero
       }
     }
   }
+  &__right-col {
+    @include centerContent;
+    grid-column: 6 / 10;
+    grid-row: 1 / 3;
+    background-color: $mid-black;
+  }
 }
 
 /* ==========================================================================
-About
+skills
 ========================================================================== */
+.skills {
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(21%, rgba(245, 245, 245, 1)), color-stop(55%, rgba(237, 237, 237, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+  background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
+  min-height: 40rem;
+  grid-row: 3 / 4;
+  grid-column: 2 / 10;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+
+  &__block {
+    text-align: center;
+
+    justify-content: center;
+    padding: 5rem 0;
+    background-color: #f6f7f9;
+    width: 33.333%;
+
+    &__icon {
+      vertical-align: top;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 1rem;
+      color: #778899;
+      font-family: FontAwesome;
+
+    }
+
+    &__body {
+      display: inline-block;
+      margin-left: 0;
+      width: 50%;
+      
+    }
+    &__header {
+      margin:1.5rem 0;
+      padding: 0;
+      color: #24374b;
+      font-size: 1.5rem;
+    }
+
+    &__p {
+      width:100%;
+      font-size:1rem;
+      color: #778899;
+      
+    } 
+    
+  }
+
+ 
+
+  
+
+  
+ 
+  }
 
 /* ==========================================================================
 Projects
 ========================================================================== */
-
+.projects {
+  grid-row: 4 / 5;
+  grid-column: 2 / 10;
+}
 /* ==========================================================================
 Blog
 ========================================================================== */
-
+.blog {
+  grid-row: 5 / 6;
+  grid-column: 2 / 10;
+}
