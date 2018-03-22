@@ -14,9 +14,11 @@ html {
 
 body {
   box-sizing: border-box;
-  display:grid;
-  grid-template-columns: repeat(10, 1fr);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  background-color: #F7F7F7;
+  
 }
 
 /* ==========================================================================

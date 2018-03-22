@@ -89,8 +89,9 @@ html {
 body {
   box-sizing: border-box;
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-template-rows: auto; }
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  background-color: #F7F7F7; }
 
 /* ==========================================================================
 Grid
@@ -108,100 +109,37 @@ h1 {
   font-weight: 800; }
 
 header {
-  grid-column: 1 / 1;
-  grid-row: 1 / -1;
-  background-color: #000;
-  height: 100%; }
+  position: relative; }
 
 /* ==========================================================================
-Navigation
+Social Icons
 ========================================================================== */
-.nav-toggle {
+.social {
   position: absolute;
-  top: 0;
-  right: 15px;
-  z-index: 999999;
-  padding: 10px 35px 16px 0px;
-  cursor: pointer; }
-
-.nav-toggle:focus {
-  outline: none; }
-
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 35px;
-  height: 5px;
-  border-radius: 1px;
-  background: #fff;
-  cursor: pointer; }
-
-.nav-toggle span:before {
-  top: -10px; }
-
-.nav-toggle span:after {
-  bottom: -10px; }
-
-.nav-toggle span,
-.nav-toggle span:before,
-.nav-toggle span:after {
-  -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out; }
-
-.nav-toggle.active span {
-  background-color: transparent; }
-
-.nav-toggle.active span:before,
-.nav-toggle.active span:after {
-  top: 0; }
-
-.nav-toggle.active span:before {
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg); }
-
-.nav-toggle.active span:after {
-  top: 10px;
-  -webkit-transform: translateY(-10px) rotate(-45deg);
-  -ms-transform: translateY(-10px) rotate(-45deg);
-  transform: translateY(-10px) rotate(-45deg); }
-
-.navicon {
-  position: relative;
-  height: 26px; }
-
-.navicon p {
-  margin: 1px 50px 0 0; }
-
-.navicon-fixed {
-  position: fixed;
-  top: 59px;
-  right: 143px; }
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 footer {
   grid-row: 6 / 7;
-  grid-column: 2 / 10; }
+  width: 90vw; }
 
 /* ==========================================================================
 Hero
 ========================================================================== */
 .hero {
   height: 60rem;
-  display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  grid-column: 1 / 11;
-  grid-row: 2 / 3; }
+  width: 90vw;
+  height: 80vh;
+  display: flex;
+  margin-top: 5%; }
   .hero__left-col {
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
     background-color: #FF4849;
-    grid-column: 2 / 6;
-    grid-row: 1 / 3; }
+    width: 50%; }
     .hero__left-col .rw-wrapper {
       position: absolute;
       top: 0%;
@@ -258,13 +196,112 @@ Hero
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-column: 6 / 10;
-    grid-row: 1 / 3;
+    width: 50%;
     background-color: #545454; }
 
 /* ==========================================================================
-skills
+Projects
 ========================================================================== */
+.projects {
+  grid-row: 4 / 5;
+  width: 90vw;
+  /* ==========================================================================
+Screenshots Intro
+========================================================================== */
+  /* ==========================================================================
+Screenshots
+========================================================================== */ }
+  .projects .screenshots-intro {
+    padding: 170px 0 100px 0;
+    background-color: #f6f7f9; }
+  .projects .screenshots-intro h1 {
+    margin-bottom: 20px;
+    color: #24374b;
+    font-weight: 400;
+    font-size: 22px; }
+  .projects .screenshots-intro p {
+    margin-bottom: 25px;
+    color: #778899; }
+  .projects .screenshots ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+  .projects .screenshots ul li {
+    float: left;
+    min-height: 100%;
+    width: 25%;
+    background-color: #000;
+    list-style: none; }
+  .projects .screenshots figure {
+    position: relative;
+    overflow: hidden; }
+  .projects .screenshots figure img {
+    width: 100%;
+    height: 100%;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .projects .screenshots figure:hover img,
+  .projects .screenshots figure:focus img {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); }
+  .projects .screenshots figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 25% 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(63, 97, 132, 0.85);
+    text-align: center;
+    font-size: 15px;
+    opacity: 0;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .projects .screenshots figcaption a {
+    color: #fff; }
+  .projects .screenshots figcaption a:hover,
+  .projects .screenshots figcaption a:focus {
+    color: #73d0da; }
+  .projects .screenshots figure:hover figcaption,
+  .projects .screenshots figure:focus figcaption {
+    opacity: 1; }
+  .projects .visible {
+    opacity: 1; }
+  .projects .screenshots figure.cs-hover figcaption {
+    opacity: 1; }
+  .projects .screenshots figcaption i {
+    font-size: 35px; }
+  .projects .screenshots figcaption p {
+    margin-bottom: 0;
+    text-transform: uppercase;
+    font-weight: 400; }
+  .projects .screenshots figcaption .caption-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -40px;
+    margin-left: -100px;
+    width: 200px;
+    -webkit-transform: translate(0px, 15px);
+    -ms-transform: translate(0px, 15px);
+    transform: translate(0px, 15px);
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out; }
+  .projects .screenshots figure:hover figcaption .caption-content,
+  .projects .screenshots figure:focus figcaption .caption-content {
+    -webkit-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    transform: translate(0px, 0px); }
+
+/* ==========================================================================
+Blog
+========================================================================== */
+.blog {
+  grid-row: 5 / 6;
+  width: 90vw; }
+
 .skills {
   background: white;
   background: -moz-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
@@ -276,7 +313,7 @@ skills
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
   min-height: 40rem;
   grid-row: 3 / 4;
-  grid-column: 2 / 10;
+  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -307,20 +344,6 @@ skills
       width: 100%;
       font-size: 1rem;
       color: #778899; }
-
-/* ==========================================================================
-Projects
-========================================================================== */
-.projects {
-  grid-row: 4 / 5;
-  grid-column: 2 / 10; }
-
-/* ==========================================================================
-Blog
-========================================================================== */
-.blog {
-  grid-row: 5 / 6;
-  grid-column: 2 / 10; }
 
 /* ==========================================================================
 Media Queries
