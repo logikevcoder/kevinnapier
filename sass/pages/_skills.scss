@@ -9,8 +9,8 @@
   background: linear-gradient(135deg, rgba(255, 255, 255, 1) 0%, rgba(245, 245, 245, 1) 21%, rgba(237, 237, 237, 1) 55%, rgba(237, 237, 237, 1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
   min-height: 40rem;
+  grid-column: 1 / 5;
   grid-row: 3 / 4;
-  width:90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;

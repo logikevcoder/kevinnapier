@@ -93,6 +93,9 @@ body {
   grid-template-rows: auto;
   background-color: #F7F7F7; }
 
+body > section {
+  margin: 0 5%; }
+
 /* ==========================================================================
 Grid
 ========================================================================== */
@@ -122,17 +125,24 @@ Social Icons
 
 footer {
   grid-row: 6 / 7;
-  width: 90vw; }
+  grid-column: 1 / 5; }
+
+/* ==========================================================================
+Blog
+========================================================================== */
+.blog {
+  grid-column: 1 / 5;
+  grid-row: 5 / 6; }
 
 /* ==========================================================================
 Hero
 ========================================================================== */
 .hero {
   height: 60rem;
-  width: 90vw;
   height: 80vh;
   display: flex;
-  margin-top: 5%; }
+  margin-top: 5%;
+  grid-column: 1 / 5; }
   .hero__left-col {
     display: flex;
     justify-content: center;
@@ -144,7 +154,7 @@ Hero
       position: absolute;
       top: 0%;
       left: 116%;
-      width: 100%;
+      width: 75%;
       font-family: 'Open Sans';
       padding-top: 5rem;
       text-align: center; }
@@ -203,11 +213,8 @@ Hero
 Projects
 ========================================================================== */
 .projects {
+  grid-column: 1 / 5;
   grid-row: 4 / 5;
-  width: 90vw;
-  /* ==========================================================================
-Screenshots Intro
-========================================================================== */
   /* ==========================================================================
 Screenshots
 ========================================================================== */ }
@@ -295,13 +302,6 @@ Screenshots
     -ms-transform: translate(0px, 0px);
     transform: translate(0px, 0px); }
 
-/* ==========================================================================
-Blog
-========================================================================== */
-.blog {
-  grid-row: 5 / 6;
-  width: 90vw; }
-
 .skills {
   background: white;
   background: -moz-linear-gradient(-45deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
@@ -312,8 +312,8 @@ Blog
   background: linear-gradient(135deg, white 0%, whitesmoke 21%, #ededed 55%, #ededed 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed', GradientType=1);
   min-height: 40rem;
+  grid-column: 1 / 5;
   grid-row: 3 / 4;
-  width: 90vw;
   display: flex;
   flex-direction: row;
   justify-content: center;
