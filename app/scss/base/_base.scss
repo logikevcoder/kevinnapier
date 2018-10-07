@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  // Set the default font-size to rems, 10px = 1rem
+  font-size: 62.5%; // Which = 10px / 16px 
+  // This also allows the user to zoom in on the page. It enhances the size of everything. 
+}
+
+body {
+  box-sizing: border-box;
+  
+  background-color: #F7F7F7;
+}
+
+body > section {
+  margin: 0 5%;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 95vw !important;
+}

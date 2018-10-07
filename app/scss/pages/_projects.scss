@@ -1,0 +1,29 @@
+/* ==========================================================================
+Projects
+========================================================================== */
+
+.projects {
+  position: relative;
+  max-width: 95vw;
+  height: 90vh;
+  padding: 10rem 0;
+  background-color: $alabaster-white;
+
+  &__header {
+    position: absolute;
+    top: 7%;
+    z-index: 20;
+    font-size: 4rem;
+    font-weight: 800;
+    line-height: 45px;
+
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  &__image {
+    width: 100%;
+    padding: 0 !important;
+  }
+}

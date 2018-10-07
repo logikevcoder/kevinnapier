@@ -1,0 +1,24 @@
+/* ==========================================================================
+Blog
+========================================================================== */
+
+.blog {
+    background-color: #f6f7f9;
+    width: 95vw;
+    &__header {
+        text-align: center;
+    }
+    .blog-post {
+        height: 35rem;
+        width: 30rem;
+        &__header {
+            height: 30%;
+            background-color: red;
+        }
+        &__body {
+            height: 70%;
+            background: color #e6e6e6;
+            ;
+        }
+    }
+}

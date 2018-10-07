@@ -1,0 +1,49 @@
+/* ==========================================================================
+Hero
+========================================================================== */
+
+.hero {
+  height: 90vh;
+  width:95vw;
+  position: relative;
+  display: flex;
+  margin-top:5%;
+
+  &__left-col,
+  &__right-col {
+    @include centerContent;
+
+    width: 50%;
+  }
+
+  &__left-col {
+    background-color: $main-red;
+
+    .hero__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 9rem;
+      font-weight: 800;
+      line-height: 8rem;
+      -webkit-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+
+      span {
+        color: $main-red;
+      }
+    }
+  }
+
+  &__right-col {
+    background-color: $alabaster-white;
+    
+    .about {
+      color: #fff;
+    }
+  }
+}
+
