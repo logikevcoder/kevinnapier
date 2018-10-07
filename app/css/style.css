@@ -200,13 +200,9 @@ Projects
     padding: 0 !important; }
 
 .skills {
-  background-color: #000;
   height: 100vh;
   width: 95vw;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center; }
+  background-color: #f9f9f9; }
   .skills .row {
     align-items: center;
     padding: 0; }
@@ -219,7 +215,7 @@ Projects
     text-align: center;
     font-size: 3rem;
     line-height: 1rem;
-    color: #fff;
+    color: #000;
     font-family: FontAwesome; }
   .skills__body {
     display: inline-block;
@@ -228,12 +224,15 @@ Projects
   .skills__header {
     margin: 1.5rem 0;
     padding: 0;
-    color: #24374b;
     font-size: 1.5rem; }
   .skills__p {
     width: 100%;
-    font-size: 1rem;
-    color: #778899; }
+    font-size: 1rem; }
+
+.experience {
+  max-width: 300px; }
+  .experience img {
+    width: 100%; }
 
 .contact {
   width: 90vw;
