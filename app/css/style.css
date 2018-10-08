@@ -87,8 +87,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  box-sizing: border-box;
-  background-color: #F7F7F7; }
+  box-sizing: border-box; }
 
 body > section {
   margin: 0 5%;
@@ -97,8 +96,12 @@ body > section {
 img {
   width: 100%; }
 
-.container {
+.body-content {
+  background-color: #f9f9f9;
   max-width: 95vw !important; }
+
+.container {
+  padding: 0 !important; }
 
 body {
   background-color: #fff;
@@ -183,8 +186,7 @@ Projects
 .projects {
   position: relative;
   max-width: 95vw;
-  height: 90vh;
-  padding: 10rem 0;
+  margin: 10rem 0;
   background-color: #f9f9f9; }
   .projects__header {
     position: absolute;
@@ -200,8 +202,8 @@ Projects
     padding: 0 !important; }
 
 .skills {
-  height: 100vh;
   width: 95vw;
+  margin: 10rem 0;
   background-color: #f9f9f9; }
   .skills .row {
     align-items: center;
@@ -230,13 +232,20 @@ Projects
     font-size: 1rem; }
 
 .experience {
-  max-width: 300px; }
-  .experience img {
-    width: 100%; }
+  width: 95vw;
+  margin: 10rem 0; }
+  .experience__item {
+    margin-top: 2rem;
+    width: 70%; }
+    .experience__item:nth-child(odd) {
+      text-align: right;
+      margin-left: auto; }
+      .experience__item:nth-child(odd) p {
+        margin-left: auto; }
 
 .contact {
-  width: 90vw;
-  height: 90vh; }
+  width: 70%;
+  margin: 2rem auto; }
 
 /* ==========================================================================
 Media Queries

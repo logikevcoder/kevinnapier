@@ -21,8 +21,9 @@
     crossorigin="anonymous"></script>
 </head>
 
-<body class="grid-body">
+<body>
 
+  <section class="body-content">
   <!-- <header>
     <div class="header__nav">
       <a id="trigger-overlay" class="header__nav_slide_button nav-toggle" href="#">
@@ -63,19 +64,8 @@
     </div>
 
     <div class="hero__right-col">
-      <section class="about">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi eos necessitatibus, porro tempora est
-          similique id, tempore delectus quis omnis rem neque, fuga enim. Eius harum corporis reiciendis eos sint.</p>
-      </section>
-
-      <div class="scroll-down-btn">
-        <div>
-          <!-- <a href="#about" class="learn-btn animated fadeInUp">Learn more
-            <i class="fa fa-arrow-down"></i>
-          </a> -->
-        </div>
-      </div>
     </div>
+    <!-- hero__right-col -->
   </section>
 
   <section class="skills container">
@@ -95,7 +85,7 @@
             </a> -->
         </div>
       </div>
-
+      <!-- skills__block -->
       <div class="skills__block col-sm-4">
         <div class="skills__icon">
           <i class="fa fa-laptop"></i>
@@ -112,6 +102,7 @@
             </a> -->
         </div>
       </div>
+      <!-- skills__block -->
       <div class="skills__block col-sm-4">
         <div class="skills__icon">
           <i class="fa fa-magic"></i>
@@ -126,11 +117,24 @@
             </a> -->
         </div>
       </div>
+      <!-- skills__block -->
     </div>
-    <div class="experience"><a href="https://placeholder.com"><img src="https://via.placeholder.com/1200x800"></a></div>
-    <div class="experience"><a href="https://placeholder.com"><img src="https://via.placeholder.com/1200x800"></a></div>
-    <div class="experience"><a href="https://placeholder.com"><img src="https://via.placeholder.com/1200x800"></a></div>
-  </section>
+    <!-- row -->
+    </section>
+    <section class="experience container">
+      <div class="experience__item row">
+        <p class="experience__copy col-md-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, ipsam iste! Mollitia nesciunt fuga ut repellendus ducimus ipsum nisi cupiditate, neque, cum perspiciatis distinctio recusandae, deleniti aperiam accusamus molestiae atque?</p>
+        <div class="experience__img col-md-4"><img src="https://via.placeholder.com/1200x800"></div>
+      </div>
+      <div class="experience__item row">
+        <div class="experience__img col-md-4"><img src="https://via.placeholder.com/1200x800"></div>
+        <p class="experience__copy col-md-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet corrupti assumenda voluptatum quae deserunt facilis perspiciatis ut, tenetur incidunt magni dicta dolore ab quas repellat in quam, temporibus facere.</p>
+      </div>
+      <div class="experience__item row">
+        <p class="experience__copy col-md-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non amet corrupti assumenda voluptatum quae deserunt facilis perspiciatis ut, tenetur incidunt magni dicta dolore ab quas repellat in quam, temporibus facere.</p>
+        <div class="experience__img col-md-4"><img src="https://via.placeholder.com/1200x800"></div>
+      </div>
+    </section>
 
   <section class="projects container">
     <h2 class="projects__header">My <br>
@@ -162,6 +166,71 @@
 
 <footer class="contact">
   <h2 class="contact-me">Contact Me</h2>
+  <form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Firstname *</label>
+                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Lastname *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">Email *</label>
+                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_need">Please specify your need *</label>
+                    <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                        <option value=""></option>
+                        <option value="Request quotation">Request quotation</option>
+                        <option value="Request order status">Request order status</option>
+                        <option value="Request copy of an invoice">Request copy of an invoice</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Message *</label>
+                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Send message">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted">
+                    <strong>*</strong> These fields are required. Contact form template by
+            </div>
+        </div>
+    </div>
+
+</form>
 </footer>
 
 </html>

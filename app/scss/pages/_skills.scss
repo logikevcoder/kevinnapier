@@ -1,7 +1,7 @@
 
 .skills {
-  height: 100vh;
   width: 95vw;
+  margin: 10rem 0;
   background-color: $alabaster-white;
 
   .row {
@@ -45,8 +45,28 @@
 }
 
 .experience {
-  max-width: 300px;
-  img {
-    width: 100%;
+  width: 95vw;
+  margin: 10rem 0;
+
+  &__item {
+    margin-top: 2rem;
+    width: 70%;
+
+    &:nth-child(odd) {
+      text-align: right;
+      margin-left: auto;
+
+      p {
+        margin-left: auto;
+      }
+    }
+  }
+
+  &__img {
+    
+  }
+
+  &__copy {
+    
   }
 }
