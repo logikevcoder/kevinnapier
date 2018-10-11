@@ -25,12 +25,21 @@ img {
   width: 100%;
 }
 
-.body-content {
-background-color: $alabaster-white;
-max-width: 95vw !important;
+html,
+body {
+background-color: #2d2d2d !important;
 }
 
+.content {
+  background-color: #fff;
+  width: 95vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  margin-bottom: 500px;
+}
 .container {
-  min-height: 500px;
+  max-width: 100% !important;
   padding: 0 !important;
+  min-height: 500px;
 }

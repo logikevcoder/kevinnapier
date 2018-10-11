@@ -96,13 +96,22 @@ body > section {
 img {
   width: 100%; }
 
-.body-content {
-  background-color: #f9f9f9;
-  max-width: 95vw !important; }
+html,
+body {
+  background-color: #2d2d2d !important; }
+
+.content {
+  background-color: #fff;
+  width: 95vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20;
+  margin-bottom: 500px; }
 
 .container {
-  min-height: 500px;
-  padding: 0 !important; }
+  max-width: 100% !important;
+  padding: 0 !important;
+  min-height: 500px; }
 
 body {
   background-color: #fff;
@@ -127,6 +136,18 @@ Social Icons
   right: 20px;
   top: 50%;
   transform: translateY(-50%); }
+
+footer {
+  background-color: #fff;
+  height: 500px;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 95vw;
+  margin: 4rem auto;
+  padding: 60px 40px;
+  z-index: -20; }
 
 /* ==========================================================================
 Blog
@@ -163,17 +184,9 @@ Hero
   .hero__left-col {
     background-color: #FF4849; }
     .hero__left-col .hero__text {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
       font-size: 9rem;
       font-weight: 800;
-      line-height: 8rem;
-      -webkit-transform: translate(-50%, -50%);
-      -moz-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%); }
+      line-height: 8rem; }
       .hero__left-col .hero__text span {
         color: #FF4849; }
   .hero__right-col {
@@ -229,13 +242,10 @@ Projects
     .projects__header span {
       margin-left: 20px; }
   .projects__image {
-    width: 100%;
-    padding: 0 !important; }
+    width: 100%; }
 
 .skills {
-  width: 95vw;
-  margin: 10rem 0;
-  background-color: #f9f9f9; }
+  width: 95vw; }
   .skills .row {
     align-items: center;
     padding: 0; }
@@ -267,6 +277,7 @@ Projects
   margin: 10rem 0; }
   .experience__item {
     margin-top: 2rem;
+    padding: 0 20px;
     width: 70%; }
     .experience__item:nth-child(odd) {
       text-align: right;

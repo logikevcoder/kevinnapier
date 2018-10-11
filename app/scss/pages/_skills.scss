@@ -1,8 +1,6 @@
 
 .skills {
   width: 95vw;
-  margin: 10rem 0;
-  background-color: $alabaster-white;
 
   .row {
     align-items: center;
@@ -50,6 +48,7 @@
 
   &__item {
     margin-top: 2rem;
+    padding: 0 20px;
     width: 70%;
 
     &:nth-child(odd) {
