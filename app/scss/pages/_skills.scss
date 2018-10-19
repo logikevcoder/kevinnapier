@@ -1,45 +1,17 @@
-
 .skills {
   width: 95vw;
+  padding: 20rem 0;
+  background-image: linear-gradient(to right bottom,
+    rgba($color-primary-dark, 0.8),
+    rgba($color-primary-light, 0.8));
+  background-size: cover;
 
-  .row {
-    align-items: center;
-    padding: 0;
-  }
-  
-  &__block {
-    text-align: center;
-    justify-content: center;
-    padding: 5rem 0;
-  }
+  transform: skewY(-7deg);
 
-  &__icon {
-    vertical-align: top;
-    text-align: center;
-    font-size: 3rem;
-    line-height: 1rem;
-    color: #000;
-    font-family: FontAwesome;
+  &>* {
+    transform: skewY(7deg);
   }
 
-  &__body {
-    display: inline-block;
-    margin-left: 0;
-    width: 50%;
-  }
-
-  &__header {
-    margin: 1.5rem 0;
-    padding: 0;
-    // color: #24374b;
-    font-size: 1.5rem;
-  }
-
-  &__p {
-    width: 100%;
-    font-size: 1rem;
-    // color: #778899;
-  }
 }
 
 .experience {
@@ -61,11 +33,7 @@
     }
   }
 
-  &__img {
-    
-  }
+  &__img {}
 
-  &__copy {
-    
-  }
+  &__copy {}
 }

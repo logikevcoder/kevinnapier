@@ -25,13 +25,8 @@ img {
   width: 100%;
 }
 
-html,
-body {
-background-color: #2d2d2d !important;
-}
-
 .content {
-  background-color: #fff;
+  background-color: #f9f9f9;
   width: 95vw;
   margin: 0 auto;
   position: relative;
@@ -40,6 +35,5 @@ background-color: #2d2d2d !important;
 }
 .container {
   max-width: 100% !important;
-  padding: 0 !important;
-  min-height: 500px;
+  
 }

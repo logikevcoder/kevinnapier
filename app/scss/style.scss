@@ -8,12 +8,14 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/skills_block";
+
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/blog";
 @import "pages/home";
-@import "pages/_projects.scss";
+@import "pages/projects.scss";
 @import "pages/skills";
 @import "pages/contact";
 
