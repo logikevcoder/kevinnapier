@@ -1,0 +1,27 @@
+.masthead {
+  height: 90vh;
+  width:95vw;
+  position: relative;
+  
+  display: flex;
+
+  &__left-col,
+  &__right-col {
+    @include centerContent;
+
+    width: 50%;
+  }
+
+  &__left-col {
+
+  }
+
+  &__right-col {
+    background-color: $alabaster-white;
+    
+    .about {
+      color: #fff;
+    }
+  }
+}
+

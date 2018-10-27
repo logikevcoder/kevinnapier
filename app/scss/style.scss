@@ -1,25 +1,20 @@
-@import "abstracts/functions";
-@import "abstracts/mixins";
-@import "abstracts/variables";
-@import "abstracts/icons";
+// Core variables and mixins
+@import "variables";
+@import "mixins";
 
-@import "base/animations";
-@import "base/base";
-@import "base/typography";
-@import "base/utilities";
-
-@import "components/skills_block";
-
-@import "layout/header";
-@import "layout/footer";
-
-@import "pages/blog";
-@import "pages/home";
-@import "pages/projects.scss";
-@import "pages/skills";
-@import "pages/contact";
+// Global CSS
+@import "global";
 
 
-/* ==========================================================================
-Media Queries
-========================================================================== */
+@import "animations";
+@import "typography";
+
+// Site sections
+@import "masthead";
+@import "skills";
+@import "experience";
+@import "projects.scss";
+@import "blog";
+@import "contact";
+@import "footer";
+@import "sidenav";

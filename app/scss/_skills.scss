@@ -1,5 +1,12 @@
+.skills {
+  width: 95vw;
+  padding: 30rem 0 45rem;
+  margin-bottom: -15rem;
+  background-color: $gray-100;
+
+}
+
 .skills__block {
-  width: 80%;
   margin: 0 auto;
   min-height: 300px;
   background-color: rgba($color-white, .8);
@@ -14,9 +21,7 @@
     font-size: 5rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to bottom, $color-primary-light, $color-primary-dark);
-    -webkit-background-clip: text;
-    color: transparent;
+    color: $color-primary;
   }
 
   h2 {

@@ -1,22 +1,17 @@
-.skills {
+.experience {
   width: 95vw;
-  padding: 20rem 0;
+  position: relative;
+  z-index: 1;
+  padding: 15rem 0 30rem;
   background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 0.8),
-    rgba($color-primary-light, 0.8));
+    rgba($color-primary-dark, 1),
+    rgba($color-primary-light, 1));
   background-size: cover;
-
   transform: skewY(-7deg);
 
   &>* {
     transform: skewY(7deg);
   }
-
-}
-
-.experience {
-  width: 95vw;
-  margin: 10rem 0;
 
   &__item {
     margin-top: 2rem;

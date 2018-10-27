@@ -13,25 +13,37 @@ html {
 }
 
 body {
-  box-sizing: border-box;
+  overflow-x: hidden;
+  @include body-font;
 }
 
-body > section {
-  margin: 0 5%;
-  margin: 0 auto;
+a {
+  text-decoration: none;
+  color: $primary;
+
+  &:hover {
+    color: darken($primary, 10%);
+  }
+}
+
+.text-primary {
+  color: $primary !important;
+}
+
+section {
+  padding: 100px 0;
 }
 
 img {
   width: 100%;
 }
 
-.content {
+.body-content {
   background-color: #f9f9f9;
   width: 95vw;
   margin: 0 auto;
   position: relative;
   z-index: 20;
-  margin-bottom: 500px;
 }
 .container {
   max-width: 100% !important;

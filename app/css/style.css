@@ -1,3 +1,42 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+
+a {
+  text-decoration: none;
+  color: #fed136; }
+  a:hover {
+    color: #fec503; }
+
+.text-primary {
+  color: #fed136 !important; }
+
+section {
+  padding: 100px 0; }
+
+img {
+  width: 100%; }
+
+.body-content {
+  background-color: #f9f9f9;
+  width: 95vw;
+  margin: 0 auto;
+  position: relative;
+  z-index: 20; }
+
+.container {
+  max-width: 100% !important; }
+
 /* ==========================================================================
 Waypoints
 ========================================================================== */
@@ -79,7 +118,7 @@ keyframes
 .arrow {
   text-align: center;
   position: absolute;
-  left: 48%;
+  left: 50%;
   bottom: 2%;
   color: black; }
   .arrow a {
@@ -102,54 +141,101 @@ keyframes
   60% {
     transform: translateY(-15px); } }
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit; }
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #b61924;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%; }
 
-html {
-  font-size: 62.5%; }
+/* ---- stats.js ---- */
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold; }
 
-body {
-  box-sizing: border-box; }
+.js-count-particles {
+  font-size: 1.1em; }
 
-body > section {
-  margin: 0 5%;
-  margin: 0 auto; }
+#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px; }
 
-img {
-  width: 100%; }
+#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden; }
 
-.content {
-  background-color: #f9f9f9;
-  width: 95vw;
-  margin: 0 auto;
-  position: relative;
-  z-index: 20;
-  margin-bottom: 500px; }
+.count-particles {
+  border-radius: 0 0 3px 3px; }
 
-.container {
-  max-width: 100% !important; }
-
-body {
-  background-color: #fff;
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.7; }
-
-h1 {
-  color: #fff;
-  font-family: "Open Sans", sans-serif;
-  line-height: 7.5rem;
+.masthead__text {
   font-size: 9rem;
-  font-weight: 800; }
+  font-weight: 800;
+  line-height: 8rem; }
 
 p {
   font-size: 1.6rem; }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+
+section {
+  padding: 100px 0; }
+  section h2.section-heading {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px; }
+  section h3.section-subheading {
+    font-size: 16px;
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+    text-transform: none;
+    font-family: 'Droid Serif', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+
+.masthead {
+  height: 90vh;
+  width: 95vw;
+  position: relative;
+  display: flex; }
+  .masthead__left-col, .masthead__right-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%; }
+  .masthead__right-col {
+    background-color: #f9f9f9; }
+    .masthead__right-col .about {
+      color: #fff; }
+
+.skills {
+  width: 95vw;
+  padding: 30rem 0 45rem;
+  margin-bottom: -15rem;
+  background-color: #f8f9fa; }
+
 .skills__block {
-  width: 80%;
   margin: 0 auto;
   min-height: 300px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -162,37 +248,47 @@ p {
     font-size: 5rem;
     margin-bottom: .5rem;
     display: inline-block;
-    background-image: linear-gradient(to bottom, #E4E5E6, #00416A);
-    -webkit-background-clip: text;
-    color: transparent; }
+    color: #63879e; }
   .skills__block h2 {
     padding: 1rem 0; }
   .skills__block:hover {
     transform: translateY(-1.5rem) scale(1.03); }
 
-header {
-  position: relative; }
-
-/* ==========================================================================
-Social Icons
-========================================================================== */
-.social {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%); }
-
-footer {
-  background-color: #fff;
-  height: 500px;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  transform: translatex(-50%);
+.experience {
   width: 95vw;
-  margin: 4rem auto;
-  padding: 60px 40px;
-  z-index: -20; }
+  position: relative;
+  z-index: 1;
+  padding: 15rem 0 30rem;
+  background-image: linear-gradient(to right bottom, #9cb5c5, #e4e5e6);
+  background-size: cover;
+  transform: skewY(-7deg); }
+  .experience > * {
+    transform: skewY(7deg); }
+  .experience__item {
+    margin-top: 2rem;
+    padding: 0 20px;
+    width: 70%; }
+    .experience__item:nth-child(odd) {
+      text-align: right;
+      margin-left: auto; }
+      .experience__item:nth-child(odd) p {
+        margin-left: auto; }
+
+.projects {
+  position: relative;
+  max-width: 95vw;
+  padding: 45rem 0;
+  margin-top: -15rem;
+  background-color: #f8f9fa; }
+  .projects .section-heading {
+    position: absolute;
+    top: 15%;
+    left: 3%;
+    z-index: 200; }
+    .projects .section-heading span {
+      margin-left: 20px; }
+  .projects__image {
+    width: 100%; }
 
 /* ==========================================================================
 Blog
@@ -212,79 +308,86 @@ Blog
       height: 70%;
       background: color #e6e6e6; }
 
-/* ==========================================================================
-Hero
-========================================================================== */
-.hero {
-  height: 90vh;
-  width: 95vw;
-  position: relative;
-  display: flex;
-  margin-top: 5%; }
-  .hero__left-col, .hero__right-col {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%; }
-  .hero__left-col .hero__text {
-    font-size: 9rem;
-    font-weight: 800;
-    line-height: 8rem; }
-    .hero__left-col .hero__text span {
-      color: #FF4849; }
-  .hero__right-col {
-    background-color: #f9f9f9; }
-    .hero__right-col .about {
-      color: #fff; }
+section#contact {
+  background-image: linear-gradient(rgba(156, 181, 197, 0.6), rgba(228, 229, 230, 0.6)), url("../images/contact-image.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+  section#contact .section-heading {
+    color: #fff; }
+  section#contact .form-group {
+    margin-bottom: 25px; }
+    section#contact .form-group input,
+    section#contact .form-group textarea {
+      padding: 20px; }
+    section#contact .form-group input.form-control {
+      height: auto; }
+    section#contact .form-group textarea.form-control {
+      height: 248px; }
+  section#contact .form-control:focus {
+    border-color: #fed136;
+    box-shadow: none; }
+  section#contact ::-webkit-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+  section#contact :-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+  section#contact ::-moz-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
+  section#contact :-ms-input-placeholder {
+    font-weight: 700;
+    color: #ced4da;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; }
 
-a {
-  text-decoration: none; }
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px; }
 
-/* ==========================================================================
-Projects
-========================================================================== */
-.projects {
-  position: relative;
-  max-width: 95vw;
-  margin: 10rem 0; }
-  .projects__header {
-    position: absolute;
-    top: -18%;
-    z-index: 20;
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 45px; }
-    .projects__header span {
-      margin-left: 20px; }
-  .projects__image {
-    width: 100%; }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s; }
 
-.skills {
-  width: 95vw;
-  padding: 20rem 0;
-  background-image: linear-gradient(to right bottom, rgba(0, 65, 106, 0.8), rgba(228, 229, 230, 0.8));
-  background-size: cover;
-  transform: skewY(-7deg); }
-  .skills > * {
-    transform: skewY(7deg); }
+.sidenav a:hover {
+  color: #f1f1f1; }
 
-.experience {
-  width: 95vw;
-  margin: 10rem 0; }
-  .experience__item {
-    margin-top: 2rem;
-    padding: 0 20px;
-    width: 70%; }
-    .experience__item:nth-child(odd) {
-      text-align: right;
-      margin-left: auto; }
-      .experience__item:nth-child(odd) p {
-        margin-left: auto; }
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px; }
 
-.contact {
-  width: 70%;
-  margin: 2rem auto; }
+.nav-hamburger {
+  font-size: 3rem;
+  cursor: pointer;
+  z-index: 40;
+  position: fixed;
+  top: 50%;
+  transform: translatey(-50%);
+  -webkit-transform: translatey(-50%);
+  -moz-transform: translatey(-50%);
+  -ms-transform: translatey(-50%);
+  -o-transform: translatey(-50%);
+  left: 1.8%; }
 
-/* ==========================================================================
-Media Queries
-========================================================================== */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px; }
+  .sidenav a {
+    font-size: 18px; } }
