@@ -1,125 +1,36 @@
-/* ==========================================================================
-Waypoints
-========================================================================== */
-
-.wp1,
-.wp2,
-.wp3,
-.wp4,
-.wp5,
-.wp6 {
-  // visibility: visible;
-}
-
-.bounceInLeft,
-.bounceInRight,
-.fadeInUp,
-.fadeInUpDelay,
-.fadeInDown,
-.fadeInUpD,
-.fadeInLeft,
-.fadeInRight,
-.bounceInDown {
-  // visibility: visible;
-}
-
-.delay-05s {
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-
-.delay-1s {
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-
-/* ==========================================================================
-keyframes
-========================================================================== */
-
-@-webkit-keyframes rotateWord {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -webkit-transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -webkit-transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -webkit-transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@-ms-keyframes rotateWord {
-  0% {
-    opacity: 0;
-  }
-  2% {
-    opacity: 0;
-    -ms-transform: translateY(-30px);
-  }
-  5% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  17% {
-    opacity: 1;
-    -ms-transform: translateY(0px);
-  }
-  20% {
-    opacity: 0;
-    -ms-transform: translateY(30px);
-  }
-  80% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
 @keyframes rotateWord {
   0% {
     opacity: 0;
   }
+
   2% {
     opacity: 0;
     -webkit-transform: translateY(-30px);
     transform: translateY(-30px);
   }
+
   5% {
     opacity: 1;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
+
   17% {
     opacity: 1;
     -webkit-transform: translateY(0px);
     transform: translateY(0px);
   }
+
   20% {
     opacity: 0;
     -webkit-transform: translateY(30px);
     transform: translateY(30px);
   }
+
   80% {
     opacity: 0;
   }
+
   100% {
     opacity: 0;
   }

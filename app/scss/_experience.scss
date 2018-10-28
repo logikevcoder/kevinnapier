@@ -1,11 +1,12 @@
 .experience {
-  width: 95vw;
   position: relative;
+  width: 95vw;
   z-index: 1;
   padding: 15rem 0 30rem;
-  background-image: linear-gradient(to right bottom,
-    rgba($color-primary-dark, 1),
-    rgba($color-primary-light, 1));
+  // background-image: linear-gradient(to right bottom,
+  //   rgba($color-grey-dark, 1),
+  //   rgba($color-grey-dark2, 1));
+  background-image: linear-gradient(135deg, #eae2c6 10%, #fffdf6 100%);
   background-size: cover;
   transform: skewY(-7deg);
 
@@ -25,6 +26,17 @@
       p {
         margin-left: auto;
       }
+    }
+  }
+
+  .section-heading {
+    position: absolute;
+    top: -3%;
+    right: 5%;
+    z-index: 200;
+
+    span {
+      margin-left: -40px;
     }
   }
 

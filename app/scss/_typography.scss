@@ -1,7 +1,14 @@
-.masthead__text {
-  font-size: 9rem;
-  font-weight: 800;
-  line-height: 8rem;
+.masthead__copy {
+  h1 {
+    font-size: 9rem;
+    font-weight: 800;
+    line-height: 8rem;
+
+    .name-dot {
+      font-size: 10rem;
+      
+    }
+  }
 
 }
 
@@ -20,12 +27,12 @@ h6 {
 }
 
 section {
-  padding: 100px 0;
 
   h2.section-heading {
     font-size: 40px;
     margin-top: 0;
     margin-bottom: 15px;
+    font-weight: 800;
   }
 
   h3.section-subheading {

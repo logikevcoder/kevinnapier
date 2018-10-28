@@ -1,8 +1,8 @@
 // Styling for the contact section
 section#contact {
-  // background-color: $gray-900;
-  background-image: linear-gradient(rgba($color-primary-dark, 0.6),
-    rgba($color-primary-light, 0.6)),
+  padding: 5rem 0;
+  background-image: linear-gradient(rgba(#494949, 0.8),
+    rgba($color-grey-dark2, 0.8)),
     url('../images/contact-image.jpg');
   background-repeat: no-repeat;
   background-position: center;
