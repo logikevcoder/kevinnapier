@@ -34,6 +34,15 @@ img {
 .container {
   max-width: 100% !important; }
 
+.section-heading {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 4rem; }
+
+.name-dot {
+  color: #ff5851;
+  font-size: 5rem; }
+
 @keyframes rotateWord {
   0% {
     opacity: 0; }
@@ -175,8 +184,6 @@ section h3.section-subheading {
       color: #fff; }
       .masthead .masthead__content .masthead__copy .first-name {
         margin-left: -7.50rem; }
-      .masthead .masthead__content .masthead__copy .name-dot {
-        color: #e6daac; }
     .masthead .masthead__content .rw-wrapper {
       padding-top: 5rem; }
     .masthead .masthead__content .rw-sentence {
@@ -193,30 +200,29 @@ section h3.section-subheading {
       position: absolute;
       opacity: 0;
       overflow: hidden;
-      color: #e6daac;
+      color: #ff5851;
       animation: rotateWord 18s linear infinite 0s; }
     .masthead .masthead__content .rw-words-1 span:nth-child(2) {
       animation-delay: 3s;
-      color: #e6daac; }
+      color: #ff5851; }
     .masthead .masthead__content .rw-words-1 span:nth-child(3) {
       animation-delay: 6s;
-      color: #e6daac; }
+      color: #ff5851; }
     .masthead .masthead__content .rw-words-1 span:nth-child(4) {
       animation-delay: 9s;
-      color: #e6daac; }
+      color: #ff5851; }
     .masthead .masthead__content .rw-words-1 span:nth-child(5) {
       animation-delay: 12s;
-      color: #e6daac; }
+      color: #ff5851; }
     .masthead .masthead__content .rw-words-1 span:nth-child(6) {
       animation-delay: 15s;
-      color: #e6daac; }
+      color: #ff5851; }
 
 .skills {
   position: relative;
   width: 95vw;
-  padding: 20rem 0 55rem;
-  margin-bottom: -15rem;
-  background-color: #e6daac; }
+  padding: 10rem 0 35rem;
+  background: #f8f8f8; }
   .skills .section-heading {
     text-align: center;
     padding-bottom: 5rem; }
@@ -224,7 +230,7 @@ section h3.section-subheading {
 .skills__block {
   margin: 0 auto;
   min-height: 300px;
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
   text-align: center;
@@ -234,7 +240,7 @@ section h3.section-subheading {
     font-size: 5rem;
     margin-bottom: .5rem;
     display: inline-block;
-    color: #274B57; }
+    color: #ff5851; }
   .skills__block h2 {
     padding: 1rem 0; }
   .skills__block:hover {
@@ -244,35 +250,30 @@ section h3.section-subheading {
   position: relative;
   width: 95vw;
   z-index: 1;
-  padding: 15rem 0 30rem;
-  background-image: linear-gradient(135deg, #eae2c6 10%, #fffdf6 100%);
-  background-size: cover;
-  transform: skewY(-7deg); }
-  .experience > * {
-    transform: skewY(7deg); }
+  padding: 5rem 0 30rem;
+  background: #3a3a3a; }
   .experience__item {
+    display: flex;
     margin-top: 2rem;
     padding: 0 20px;
     width: 70%; }
+    .experience__item p {
+      color: #f2f2f2; }
+    .experience__item__text-box:nth-child(odd) {
+      margin-left: auto; }
     .experience__item:nth-child(odd) {
       text-align: right;
-      margin-left: auto; }
-      .experience__item:nth-child(odd) p {
-        margin-left: auto; }
+      margin: 10rem 0 10rem auto; }
   .experience .section-heading {
-    position: absolute;
-    top: -3%;
-    right: 5%;
-    z-index: 200; }
-    .experience .section-heading span {
-      margin-left: -40px; }
+    color: #f2f2f2;
+    font-size: 3rem;
+    padding-bottom: 4rem; }
 
 .projects {
   position: relative;
   max-width: 95vw;
-  padding: 45rem 0;
-  margin-top: -15rem;
-  background-color: #e6daac; }
+  padding: 25rem 0;
+  background-color: #f8f8f8; }
   .projects .section-heading {
     position: absolute;
     top: 15%;

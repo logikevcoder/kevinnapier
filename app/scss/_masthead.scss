@@ -20,10 +20,6 @@
       .first-name {
         margin-left: -7.50rem;
       }
-      .name-dot {
-        color: #e6daac;
-      }
-      
     }
 
     .rw-wrapper {
@@ -50,33 +46,33 @@
       position: absolute;
       opacity: 0;
       overflow: hidden;
-      color: #e6daac;
+      color: $color-primary;
       animation: rotateWord 18s linear infinite 0s;
     }
 
     .rw-words-1 span:nth-child(2) {
       animation-delay: 3s;
-      color: #e6daac;
+      color: $color-primary;
     }
 
     .rw-words-1 span:nth-child(3) {
       animation-delay: 6s;
-      color: #e6daac;
+      color: $color-primary;
     }
 
     .rw-words-1 span:nth-child(4) {
       animation-delay: 9s;
-      color: #e6daac;
+      color: $color-primary;
     }
 
     .rw-words-1 span:nth-child(5) {
       animation-delay: 12s;
-      color: #e6daac;
+      color: $color-primary;
     }
 
     .rw-words-1 span:nth-child(6) {
       animation-delay: 15s;
-      color: #e6daac;
+      color: $color-primary;
     }
   
   }

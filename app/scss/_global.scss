@@ -43,6 +43,18 @@ img {
 }
 
 .container {
-  max-width: 100% !important;
-  
+  max-width: 100% !important; 
+}
+
+.section-heading {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 4rem;
+  &__accent {
+
+  }
+}
+.name-dot {
+  color: $color-primary;
+  font-size: 5rem;
 }
